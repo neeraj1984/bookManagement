@@ -1,1 +1,39 @@
 
+Back end:
+Spring Boot
+Spring MVC (version 5)
+Spring Data/Hibernate
+Java 8
+
+JUnit
+
+DB storage:
+MySQL
+MongoDB(3.4)
+HDFS
+
+Front end:
+Angular 2/4 (May be for Rest approach)
+HTML 5
+bootstrap
+JQuery
+Node JS
+
+Security(authentication):
+OAuth2/Okta
+
+Dev Ops:
+Maven
+Jenkins
+
+App Server:
+jBoss
+tomcat
+
+search engine:
+ElasticSearch
+
+data Stream service:
+Kafka
+
+email service
