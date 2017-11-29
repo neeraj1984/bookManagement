@@ -46,5 +46,5 @@ book management system is an web application which will facilitate:
 4)Issuing books to users
 5)keeps track of issued books
 6)maintains history of issued books to each user
-7)implement fine through message or mail
+7)implement fine/alert through message or mail
 8)book search
