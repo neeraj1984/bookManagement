@@ -37,3 +37,11 @@ data Stream service:
 Kafka
 
 email service
+
+
+book management system is an web application which will facilitate:
+1)Onboarding new books to the system
+2)off boarding old books from the system
+3)user management
+4)Issuing books to users
+5)keeps track of issued books 
