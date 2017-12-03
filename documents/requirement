@@ -48,7 +48,10 @@ New books will be loaded in to system by 2 ways:
 Books data will be deleted from system based on some conditions.
 3)user management
 Roles:
-1)Super user : Will have access to all the functionalities including book loading/deleting into the system
+1)Super user(admin) : Will have access to all the functionalities including 
+  ->User creation
+  ->book loading into the system
+  ->deleting books from the system
 2)Librarian : Will have access to issue the books,book search,print reports
 3)Reader: Will have access to check all the issued books details and search function
 
