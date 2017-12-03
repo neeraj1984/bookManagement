@@ -41,8 +41,17 @@ email service
 
 book management system is an web application which will facilitate:
 1)Onboarding new books to the system
+New books will be loaded in to system by 2 ways:
+ a) As an CSV file
+ b) As an XML file
 2)off boarding old books from the system
+Books data will be deleted from system based on some conditions.
 3)user management
+Roles:
+1)Super user : Will have access to all the functionalities including book loading/deleting into the system
+2)Librarian : Will have access to issue the books,book search,print reports
+3)Reader: Will have access to check all the issued books details and search function
+
 4)Issuing books to users
 5)keeps track of issued books
 6)maintains history of issued books to each user
@@ -50,3 +59,4 @@ book management system is an web application which will facilitate:
 8)book search
 9)printing reports and PDF for various details
 10)Misc: using google Map API and vedio embeding
+11)Books can be read online as PDF
