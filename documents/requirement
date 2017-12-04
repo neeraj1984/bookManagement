@@ -66,6 +66,7 @@ How to use kafka in the application?
 How to use ElasticSearch in the application?
 How to use nginx for the application?
 Need to identify the layout design to be used in the applications 
+Identify common pages for all roles
 
 --------------------------------------------------------------------------------------------------------
 Book management system is an web application which will facilitate:
