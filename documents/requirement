@@ -30,6 +30,8 @@ App Server:
 jBoss
 tomcat
 
+nginx as web server and load balancer
+
 search engine:
 ElasticSearch
 
