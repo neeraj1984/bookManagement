@@ -47,7 +47,10 @@ components which will be utilised across all versions.
 
 ->Web application using Spring boot,Spring batch, MySQL,Hibernate, Jquery and thymeleaf templates, OAuth2
 ->Single page application using angular 5, MongoDB,bootstrap, Spring Rest API,Spring Data, OAuth2 with Okta
+Note:MongoDB will be connected using Spring Data and MongoConnector both
 ->Application using node js and mongo DB, Spring Rest API, spring Data, Oauth2 with Okta
+Note:MongoDB will be connected using Spring Data and MongoConnector both
+
 
 JUnit will be used for all type of application
 
@@ -148,11 +151,19 @@ Posible Tables:
 4)tbl_issued_books_details <issued books details>
 5)tbl_books_inventory <count of each book available in the system>
 6)tbl_app_properties <common properties like server details, email messages>
+7)tbl_users_penalty <maintains penalty for each user>
 
 MongoDB:
 1) user
 2) roles
 3) books <may be containing issued books details and inventory as well as embeded documents>
 4) app_properies
+5) penalty
 
 HDFS: books data will be kept in HDFS as csv file
+
+
+----------------------------------------------------------------------------------------------------------
+
+
+
