@@ -142,6 +142,8 @@ This is an utility where Book can be read as PDF in the system itself.
 
 Constraints:
 
+13)Automated email/alert will be sent to registered users upon new book arrival
+
 ----------------------------------------------------------------------------------------------------------
 Database design
 MySQL:
@@ -149,15 +151,16 @@ Posible Tables:
 1)users <all users details>
 2)roles <all roles defined>
 3)tbl_books <individual book details>
-4)tbl_issued_books_details <issued books details>
-5)tbl_books_inventory <count of each book available in the system>
-6)tbl_app_properties <common properties like server details, email messages>
-7)tbl_users_penalty <maintains penalty for each user>
+4)tbl_books_category
+5)tbl_issued_books_details <issued books details>
+6)tbl_books_inventory <count of each book available in the system>
+7)tbl_app_properties <common properties like server details, email messages>
+8)tbl_users_penalty <maintains penalty for each user>
 
 MongoDB:
 1) user
 2) roles
-3) books <may be containing issued books details and inventory as well as embeded documents>
+3) books <may be containing category,issued books details and inventory as well as embeded documents>
 4) app_properies
 5) penalty
 
