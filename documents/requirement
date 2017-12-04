@@ -25,6 +25,7 @@ OAuth2/Okta
 Dev Ops:
 Maven
 Jenkins
+GitHub
 
 App Server:
 jBoss
@@ -40,40 +41,76 @@ Kafka
 
 email service
 
+-----------------------------------------------------------------------------------------------------
+Three versions of application will be developed and hosted in to the servers. Need to identofy the common
+components which will be utilised across all versions.
 
+->Web application using Spring boot, MySQL,Hibernate, Jquery and thymeleaf templates, OAuth2
+->Single page application using angular 5, MongoDB,bootstrap, Spring Rest API,Spring Data, OAuth2 with Okta
+->Application using node js and mongo DB, Spring Rest API, spring Data, Oauth2 with Okta
+
+JUnit will be used for all type of application
+
+Angular and Node JS application will be deployed in Jboss
+Web application will be deployed in Tomcat
+
+All application will be hosted in github.
+Web Application will be build based on maven
+Angular and Node JS server API will be build based on gradle
+
+Questions:
+How to use kafka?
+How to use ElasticSearch?
+How to use nginx?
+
+--------------------------------------------------------------------------------------------------------
 Book management system is an web application which will facilitate:
 1)Onboarding new books to the system: <Role: Admin>
 New books will be loaded in to system by 2 ways:
  a) As an CSV file
  b) As an XML file
- 3) as a web service hosted as WSDL
+ c) as a web service hosted as WSDL
+ d) loading data from HDFS
+
 2)off boarding old books from the system:<Role: Admin>
-Books data will be deleted from system based on some conditions.
+Books data will be deleted from system based on some conditions.Legacy data will be moved to HDFS
+
 3)user management <Role: Admin,individual User>
 Roles:
 1)Super user(admin) : Will have access to all the functionalities including 
-  ->User creation
-  ->book loading into the system
-  ->deleting books from the system
+  ->User creation : 
+      a) User can be created by signing into the application by individual and activating account.
+      b) Password change facility will be available to each user. Password expiry will be set to 15 days.
+      c) A Super user and librarian will be created by default in to DB
+  ->book loading into the system <Use case 1>
+  ->removing books from the system <Use case 2>
 2)Librarian : Will have access to issue the books,book search,print reports
 3)Reader: Will have access to check all the issued books details and search function
 
 4)Issuing books to users: <Role: Librarian>
 Books will be issued by librarian to the users based on the availibility of book. At max only 5 books can be issued to 
 an user for the period of 10 days. An alert(email/message) will be sent to user to return the book on the last day of issue.
+
 5)keeps track of issued books: <Role: Librarian>
 this is the utility which can be used by librarian to check the current status of issued books to all users
+
 6)Submit books to the system:<Role: user, it can be libraian and super user as well>
 User loggs in to hte system and clicks on Submit the book. Upon successfully submit, inventory will be updated in the system for the book
+
 7)maintains history of issued books to each user: <Role: Librarian,Admin and individual Users>
 this is utility where librarian can select the date range and see the details of books issued to different users.
+
 8)implement fine/alert through message or mail: <Role : Librarian>
 Every users account will be checked periodically to see the date of returning book and based on that alert will be generated
+
 9)book search <Role : Admin,Librarian and individual User>
 This facility will be available to all roles to see the availability of the books in to the system
+
 10)printing reports and PDF for various details:<Role : Admin and Librarian>
 Here librarian/admin can print the PDF of books details/inventory/issued books/new books arival/offboarded books based on date range
+
 11)Misc: using google Map API and vedio embeding <Role : ALL>
 to be decided
+
 12)Books can be read online as PDF <Role : ALL>
 This is an utility where Book can be read as PDF in the system itself.
