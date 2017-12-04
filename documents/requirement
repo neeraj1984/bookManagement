@@ -155,4 +155,4 @@ MongoDB:
 3) books <may be containing issued books details and inventory as well as embeded documents>
 4) app_properies
 
-HDFS: books data will be kept in HDFS
+HDFS: books data will be kept in HDFS as csv file
