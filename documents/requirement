@@ -45,7 +45,7 @@ email service
 Three versions of application will be developed and hosted in to the servers. Need to identify the common
 components which will be utilised across all versions.
 
-->Web application using Spring boot, MySQL,Hibernate, Jquery and thymeleaf templates, OAuth2
+->Web application using Spring boot,Spring batch, MySQL,Hibernate, Jquery and thymeleaf templates, OAuth2
 ->Single page application using angular 5, MongoDB,bootstrap, Spring Rest API,Spring Data, OAuth2 with Okta
 ->Application using node js and mongo DB, Spring Rest API, spring Data, Oauth2 with Okta
 
@@ -137,3 +137,22 @@ Constraints:
 This is an utility where Book can be read as PDF in the system itself.
 
 Constraints:
+
+----------------------------------------------------------------------------------------------------------
+Database design
+MySQL:
+Posible Tables:
+1)users <all users details>
+2)roles <all roles defined>
+3)tbl_books <individual book details>
+4)tbl_issued_books_details <issued books details>
+5)tbl_books_inventory <count of each book available in the system>
+6)tbl_app_properties <common properties like server details, email messages>
+
+MongoDB:
+1) user
+2) roles
+3) books <may be containing issued books details and inventory as well as embeded documents>
+4) app_properies
+
+HDFS: books data will be kept in HDFS
