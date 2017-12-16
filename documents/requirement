@@ -156,6 +156,7 @@ Posible Tables:
 6)tbl_books_inventory <count of each book available in the system>
 7)tbl_app_properties <common properties like server details, email messages>
 8)tbl_users_penalty <maintains penalty for each user>
+9) tbl_user_login_details
 
 MongoDB:
 1) user
