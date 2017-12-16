@@ -36,9 +36,8 @@ nginx as web server and load balancer
 search engine:
 ElasticSearch
 
-data Stream service:
+data Stream service: <this will be done as a seperate microservice using kafka and email service>
 Kafka
-
 email service
 
 -----------------------------------------------------------------------------------------------------
@@ -62,11 +61,13 @@ Web Application will be build based on maven
 Angular and Node JS server API will be build based on gradle
 
 Questions:
-How to use kafka in the application?
-How to use ElasticSearch in the application?
-How to use nginx for the application?
-Need to identify the layout design to be used in the applications 
-Identify common pages for all roles
+1) How to use kafka in the application?   Kafka will be used to send the email and will be deployed as microservice
+https://dzone.com/articles/building-microservices-with-netflix-oss-apache-kaf
+
+2) How to use ElasticSearch in the application?
+3) How to use nginx for the application?
+4) Need to identify the layout design to be used in the applications 
+5) Identify common pages for all roles
 
 --------------------------------------------------------------------------------------------------------
 Book management system is an web application which will facilitate:
